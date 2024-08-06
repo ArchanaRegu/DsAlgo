@@ -32,10 +32,10 @@ public class ApplicationHooks {
 		driver=driverfactory.init_driver(browsername);
 		
 	}
-//	@After(order=0)
-//	public void Quit_browser() {
-//		driver.quit();
-//	}
+	@After(order=0)
+	public void Quit_browser() {
+		driver.quit();
+	}
 	@After(order=1)
 	public void teardown(Scenario scenario) {
 		//Take Screen shot

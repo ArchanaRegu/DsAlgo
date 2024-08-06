@@ -61,6 +61,7 @@ public class StackStep {
 	@When("user clicks {string} button.")
 	public void user_clicks_button(String string) {
 		stackpage.click_tryHereBtn();
+		;
 	}
 
 	@Then("Application navigated to tryEditor page.")
